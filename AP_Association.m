@@ -91,7 +91,7 @@ num=num+1;
     end
 end
 
-AP_Assoc_All=mean([NHValAllPost_Ant;NHValAllAnt_Post]);
+AP_Assoc_All=median([NHValAllPost_Ant;NHValAllAnt_Post]);
 
 AP_Assoc_Pre=APDMN(1:2:35)';
 AP_Assoc_Post=APDMN(2:2:36)';
