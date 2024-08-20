@@ -112,28 +112,37 @@ end
 end
 
 
-WholeDMN=median(atanh(NHValAll));
+WholeDMN=mean(atanh(NHValAll));
 WholeDMN_Pre=WholeDMN(1:2:35)';
 WholeDMN_Post=WholeDMN(2:2:36)';
 
 
 
-AnteriorDMN=median(atanh(NHValAllAnt));
+AnteriorDMN=mean(atanh(NHValAllAnt));
 AnteriorDMN_Pre=AnteriorDMN(1:2:35)';
 AnteriorDMN_Post=AnteriorDMN(2:2:36)';
 
-posteriorDMN=median(atanh(NHValAllPost));
+posteriorDMN=mean(atanh(NHValAllPost));
 posteriorDMN_Pre=posteriorDMN(1:2:35)';
 posteriorDMN_Post=posteriorDMN(2:2:36)';
 
 
-APDMN=median(atanh(NHValAllAP));
+APDMN=mean(atanh(NHValAllAP));
 APDMN_Pre=APDMN(1:2:35)';
 APDMN_Post=APDMN(2:2:36)';
 
 
-Ratio_Pre=AnteriorDMN_Pre./posteriorDMN_Pre);
-Ratio_Post=AnteriorDMN_Post./posteriorDMN_Post;
+AnteriorDMN_med=median(atanh(NHValAllAnt));
+AnteriorDMN_med_Pre=AnteriorDMN_med(1:2:35)';
+AnteriorDMN_med_Post=AnteriorDMN_med(2:2:36)';
+
+posteriorDMN_med=median(atanh(NHValAllPost));
+posteriorDMN_med_Pre=posteriorDMN_med(1:2:35)';
+posteriorDMN_med_Post=posteriorDMN_med(2:2:36)';
+
+
+Ratio_Pre=AnteriorDMN_med_Pre./posteriorDMN_med_Pre);
+Ratio_Post=AnteriorDMN_med_Post./posteriorDMN_med_Post;
 
 
 
