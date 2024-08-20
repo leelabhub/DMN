@@ -112,22 +112,22 @@ end
 end
 
 
-WholeDMN=mean(atanh(NHValAll));
+WholeDMN=median(atanh(NHValAll));
 WholeDMN_Pre=WholeDMN(1:2:35)';
 WholeDMN_Post=WholeDMN(2:2:36)';
 
 
 
-AnteriorDMN=mean(atanh(NHValAllAnt));
+AnteriorDMN=median(atanh(NHValAllAnt));
 AnteriorDMN_Pre=AnteriorDMN(1:2:35)';
 AnteriorDMN_Post=AnteriorDMN(2:2:36)';
 
-posteriorDMN=mean(atanh(NHValAllPost));
+posteriorDMN=median(atanh(NHValAllPost));
 posteriorDMN_Pre=posteriorDMN(1:2:35)';
 posteriorDMN_Post=posteriorDMN(2:2:36)';
 
 
-APDMN=mean(atanh(NHValAllAP));
+APDMN=median(atanh(NHValAllAP));
 APDMN_Pre=APDMN(1:2:35)';
 APDMN_Post=APDMN(2:2:36)';
 
